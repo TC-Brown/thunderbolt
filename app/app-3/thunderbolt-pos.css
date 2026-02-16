@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif
+}
+html,
+body {
+    height: 100%;
+}
+main {
+    height: 92%;
+    margin-top: 10px;
+}
+header h1 { 
+    font-family: cursive;
+}
+.grid { 
+    display: grid;
+}
+.flex-row { 
+    display: flex;
+    flex-direction: row;
+}
+.flex-column { 
+    display: flex;
+    flex-direction: column;
+}
+.order,
+.menu-payment {
+    border: solid .5px;
+    border-radius: 10px;
+    margin: 0 10px 5px 10px;
+    height: 100%;
+    max-height: 100%;
+}
+/*----- Order -----*/
+.order {
+    background-color: white;
+    flex: 0 0 440px;
+    overflow: auto;
+}
+.receipt { 
+    border: solid .5px;
+    margin: 10px 15px 5px 15px;
+    box-shadow: 3px 3px 2px rgb(3,3,3);
+    user-select: none;
+    flex-grow: 1;
+}
+.receipt, 
+.company-info,
+.receipt-footer {
+    align-items: center;
+}
+.company-info { 
+    margin-top: 5px;
+}
+#company-name {
+    font-size: 1.5rem;
+}
+#company-phone {
+    font-size: 1.25rem;
+}
+th.description {
+    width: 180px;
+    text-align: left;
+}
+th.price { 
+    width: 70px;
+}
+th.subtotal { 
+    width: 75px;
+}
+.quantity,
+.price,
+.subtotal,
+.delete { 
+    text-align: right;
+}
+
+.reciept-details { 
+    margin-top: 10px;
+    flex-grow: 1;
+}
+.dotted-border { 
+    border-bottom: dotted 2px;
+}
+.delete:hover { 
+    background-color: red;
+}
+
+table.summary-table { 
+    text-align: right; 
+}
+tbody.summary-table td:nth-child(1){ 
+    width: 277px;
+}
+tbody.summary-table td:nth-child(2){ 
+    width: 75px;
+}
+tbody.summary-table td:nth-child(3){ 
+    width: 25px;
+}
+.receit-footer { 
+    padding-top: 20px;
+}
+#barcode { 
+    font-family: 'Libre Barcode 128', cursive;
+    font-size: 70px;
+    margin-top: 10px;
+}
+.toolbar { 
+    flex: 0 0 60px;
+    justify-content: space-around;
+    align-items: center;
+    border: solid .5px;
+    border-radius: 10px;
+    margin: 0 15px 5px 15px;
+}
+.toolbar-icon { 
+    font-size: 2rem;
+}
+/* Stop: 53:21:00 - Create POS Web-app */ 
