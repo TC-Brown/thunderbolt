@@ -11,7 +11,11 @@ const repoBtn = document.getElementById('app-tile-2');
 repoBtn.addEventListener('click', () => {
     window.open("https://github.com/TC-Brown");
 });
+const posBtn = document.getElementById('app-tile-3');
 
+posBtn.addEventListener('click', () =>{
+    window.location.href = "app/POS/index.html";
+});
 /* Project ID: 0003 */
 // const posBtn = document.getElementById('app-tile-3');
 
