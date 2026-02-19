@@ -18,6 +18,8 @@ header {
     background: linear-gradient(45deg, #217336, #217599);
     padding: 10px;
     border-bottom: 2px solid gold;
+    color: black;
+    text-shadow: #91A092 2px 2px 2px;
 }
 body { 
     background-color: #899499;
