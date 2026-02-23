@@ -119,7 +119,7 @@ tbody.summary-table td:nth-child(3){
     align-items: center;
     border: solid .5px;
     border-radius: 10px;
-    margin: 0 15px 5px 15px;
+    margin: 10px 15px 5px 15px;
 }
 .toolbar-icon { 
     font-size: 2rem;

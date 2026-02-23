@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* ---------- Layout Styles ----------*/
+body { 
+    background-color: grey;
+}
+main { 
+    margin: 10px;
+    height: 80vh;
+    background-color: beige;
+}
+footer { 
+    background-color: rgb(0, 0, 184);
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+/* ----------- Basic Styles ----------*/
+#header { 
+    text-align: center;
+    color: antiquewhite;
+    background-color: brown;
+    border-bottom: .5px solid gold;
+
+}
+.nav-container { 
+    padding: 5px;
+    justify-content: space-around;
+}
+.nav-btn { 
+    background-color: lightgreen;
+    height: 50px;
+    width: 100px;
+    border: .5px solid black;
+    margin: 2px auto;
+}
+.funct-btn { 
+    background-color: pink;
+    height: 50px;
+    width: 100px;
+    border: .5px solid black;
+    margin: 2px;
+}
+/*---------- Test Styles go here ---------*/
+.container { 
+    height: 400px;
+    width: 100%; 
+    background-color: skyblue;
+}
+.log { 
+    height: 100px;
+    width: 80%; 
+    border-radius: 100px;
+    background-color: brown;
+}
+.log:hover { 
+    transform: translateY(100px) translateX(50px);
+    transition: transform 1s ease-in-out;
+}

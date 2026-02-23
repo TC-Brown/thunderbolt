@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../static/img/favicon.jpg">
-    <title>T.C. Brown | Hub</title>
+    <title>T.C. Brown | POS System</title>
     <link rel="stylesheet" href="../../static/css/hub.css">
     <link rel="stylesheet" href="thunderbolt-pos.css">
     <meta name="author" content="T.C. Brown">
@@ -15,6 +15,7 @@
 
 <body>
     <header>
+        <img src="../../../hub/app/portfolio/static/img/logo.png" alt="Logo" width="100px" height="100px" class="logo" id="logo">
         <h1>Thunderbolt Cafe</h1>
     </header>
 
@@ -58,9 +59,11 @@
                             <td class="quantity">1</td>
                             <td class="price">1.99</td>
                             <td class="subtotal">1.99</td>
-                            <td class="delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-</svg></td>
+                            <td class="delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg></td>
                         </tbody>
                     </table>
                 </div>
@@ -122,18 +125,24 @@
             </article>
             <!-- Toolbar for Payment processing -->
             <div class="toolbar flex-row">
-                <button class="cash toolbar-icon"><!-- -->Cash <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
-  <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
-  <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
-</svg></button>
-                <button class="card toolbar-icon"><!-- -->Card <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
-  <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-</svg>
-</button>
-                <button class="delete toolbar-icon"><!-- -->Delete <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-</svg></button>
+                <button class="cash toolbar-icon"><!-- -->Cash <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                        <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                        <path
+                            d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z" />
+                    </svg></button>
+                <button class="card toolbar-icon"><!-- -->Card <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg>
+                </button>
+                <button class="delete toolbar-icon"><!-- -->Delete <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg></button>
             </div>
         </section>
         <section class="menu-payment grid">
@@ -160,8 +169,9 @@
                 </figure>
             </div>
         </section>
-        
+
     </main>
     <script src="../../static/js/hub.js"></script>
+    <script src="pos.js"></script>
 
 </body>
