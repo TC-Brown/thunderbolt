@@ -125,7 +125,7 @@ p {
 .social-links {
     margin-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 12px;
     border: 2px solid #FFD700;
     padding: 8px;
