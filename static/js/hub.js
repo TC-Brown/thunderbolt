@@ -19,6 +19,11 @@ stylerBtn.addEventListener('click', () => {
     window.location.href = "app/styler/styler.html"
 });
 /*-- Project ID: 0004 --*/
+const inventoryBtn = document.getElementById('app-tile-4');
+
+inventoryBtn.addEventListener('click', () => {
+    window.location.href = "app/inventory/inventory.html"
+});
 /*-- Project ID: 0005 --*/
 /*-- Project ID: 0006 --*/
 /*---- Functions ----*/

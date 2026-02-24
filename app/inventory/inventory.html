@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Inventory Pro</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Tracker</h1>
+        
+        <div class="form-card">
+            <input type="text" id="itemName" placeholder="Product Name">
+            <select id="location" onchange="toggleInputs()">
+                <option value="Freezer">Freezer</option>
+                <option value="Walk-in">Walk-in</option>
+                <option value="Wing">Wing</option>
+            </select>
+            <div id="inputGroup">
+                <input type="number" id="bins" placeholder="Bins" class="walk-in-only">
+                <input type="number" id="cases" placeholder="Cases">
+                <input type="number" id="bags" placeholder="Bags">
+            </div>
+            <button onclick="addItem()">Add to Inventory</button>
+        </div>
+
+        <div id="inventoryDisplay">
+            </div>
+    </div>
+    <script src="inventory.js"></script>
+</body>
+</html>
