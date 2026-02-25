@@ -1,5 +1,6 @@
+// inventory.js Stable version 1.0.0.beta
 let inventory = JSON.parse(localStorage.getItem('kitchenInv')) || [];
-// Toggle inputs based on location
+
 function toggleInputs() {
     const loc = document.getElementById('location').value;
     const binInput = document.getElementById('bins');
@@ -10,7 +11,6 @@ function toggleInputs() {
     casesInput.style.display = (loc === 'Wing') ? 'none' : 'block';
     bagsInput.style.display = 'block';
 }
-// Add item to inventory
 function addItem() {
     const itemName = document.getElementById('itemName').value;
     const bagValue = parseInt(document.getElementById('bags').value) || 0;
@@ -30,12 +30,10 @@ function addItem() {
     saveAndRender();
     clearForm();
 }
-// Save and render
 function saveAndRender() {
     localStorage.setItem('kitchenInv', JSON.stringify(inventory));
     renderTables();
 }
-// Render tables
 function renderTables() {
     const container = document.getElementById('inventoryDisplay');
     const locations = ['Freezer', 'Walk-in', 'Wing'];
@@ -77,7 +75,7 @@ function renderTables() {
                 totalStr = `${cheeseTotal}`;
             }
             else if (i.name === 'Chicken') {
-                const chixBg = i.bags * 2.5;  // Find logic to calculate bags @ 2.5 lbs each and display the correct number when bags are added.
+                const chixBg = i.bags * 2.5;
                 const chixCs = (i.cases * 10) + chixBg;
                 totalStr = `${i.cases} cs, ${i.bags} bags (Total: ${chixCs} lbs)`;
             }
@@ -107,7 +105,7 @@ function renderTables() {
                 totalStr = `${lgHtTotal}`;
             }
             else {
-                totalStr = `${loc !== 'Wing' ? `${i.cases} cs, ` : ''}${loc === 'Walk-in' ? `${i.bins} bins, ` : ''}${loc === 'Wing' ? `${i.bags} ind./ bags` : `${i.bags} bags`}`;
+                totalStr = `Item not found`;
             }
 
             return `
@@ -126,12 +124,10 @@ function renderTables() {
         `;
     }).join('');
 }
-// Delete item
 function deleteItem(id) {
     inventory = inventory.filter(i => i.id !== id);
     saveAndRender();
 }
-// Clear form
 function clearForm() {
     document.getElementById('itemName').value = '';
     document.getElementById('bins').value = '';
