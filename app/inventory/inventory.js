@@ -76,8 +76,9 @@ function renderTables() {
             }
             else if (i.name === 'Chicken') {
                 const chixBg = i.bags * 2.5;
-                const chixCs = (i.cases * 10) + chixBg;
-                totalStr = `${i.cases} cs, ${i.bags} bags (Total: ${chixCs} lbs)`;
+                const chixCs = i.cases * 25;
+                const chixTotal = chixBg + chixCs;
+                totalStr = `${chixTotal}`;
             }
             else if (i.name === 'It. Sausage') {
                 const itSgBg = i.bags * 5;
@@ -104,12 +105,24 @@ function renderTables() {
                 const lgHtTotal = lgHtBg + lgHtCs + lgHtBin;
                 totalStr = `${lgHtTotal}`;
             }
+            else if (i.name === 'Wings Boneless') {
+                const wbBg = i.bags * 1;
+                const wbCs = i.cases * 20;
+                const wbTotal = wbBg + wbCs;
+                totalStr = `${wbTotal}`;
+            }
+            else if (i.name === 'Wings Traditional') {
+                const wtBg = i.bags * 5;
+                const wtCs = i.cases * 20;
+                const wtTotal = wtBg + wtCs;
+                totalStr = `${wtTotal}`;
+            }
             else {
                 totalStr = `Item not found`;
             }
 
             return `
-                        <tr> <!-- Render table needs to display the correct number of bins, cases, and bags based on the location selected. -->
+                        <tr>
                             <td>${i.name}</td>
                             ${loc === 'Walk-in' ? `<td>${i.bins}</td>` : ''}
                             ${loc !== 'Wing' ? `<td>${i.cases}</td>` : ''}

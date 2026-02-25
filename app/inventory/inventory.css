@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    background: green;
+    background: linear-gradient(45deg, #217336, #217599);
     width: 450px;
     height: 850px;
 
@@ -20,14 +20,15 @@ body {
 
 .form-card { 
     background: #f4f7f6; 
-    padding: 20px; 
+    padding: 1px; 
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-    margin: 25px auto; 
+    margin: 5px auto; 
     display: flex; 
     gap: 5px;
     flex-wrap: wrap;
     width: 90%;
+    contain: content;
 }
 
 select { 
@@ -58,12 +59,17 @@ table {
     background: #f4f7f6; 
     margin: 20px auto; 
     border-collapse: collapse;
+    user-select: none;
+    table-layout: fixed;
+    width: 100%;
 }
 
 th, td { 
     padding: 12px; 
     border-bottom: 1px solid goldenrod;
     text-align: center;
+    font-weight: 300;
+    font-size: 15px;
 }
 
 th { 
@@ -71,6 +77,17 @@ th {
     color: white;
 }
 
+#inventoryDisplay {
+    background: #f4f7f6; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    margin: 25px auto; 
+    display: flex; 
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 90%;
+}
 .walk-in-only { 
     display: none;
 }
