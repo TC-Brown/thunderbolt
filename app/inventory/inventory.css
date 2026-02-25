@@ -12,9 +12,11 @@ body {
 }
 
 .container { 
-    max-width: 500px;
     width: 300px;
-    margin: auto; 
+    margin: 2px auto;
+    padding: 12px;
+    transform: translateX(-100px) translateY(5px);
+
 }
 
 .form-card { 
