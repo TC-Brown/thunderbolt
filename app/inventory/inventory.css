@@ -8,10 +8,12 @@ body {
     background: #f4f7f6; 
     padding: 20px;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .container { 
     max-width: 500px;
+    width: 300px;
     margin: auto; 
 }
 
@@ -52,24 +54,20 @@ button {
 }
 
 table { 
-    background: white; 
-    margin-bottom: 20px; 
+    background: #f4f7f6; 
+    margin: 20px auto; 
     border-collapse: collapse;
-    width: 100%;
 }
 
 th, td { 
     padding: 12px; 
-    text-align: left; 
     border-bottom: 1px solid goldenrod;
-    width: 100%;
     text-align: center;
-    justify-content: space-evenly;
 }
 
 th { 
     background: #34495e; 
-    color: white;    
+    color: white;
 }
 
 .walk-in-only { 
