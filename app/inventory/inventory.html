@@ -11,12 +11,28 @@
         <h1>Inventory Tracker</h1>
         
         <div class="form-card">
-            <input type="text" id="itemName" placeholder="Product Name">
+<!-- Inventory Items -->
+            <select name="itemName" id="itemName" class="itemName">
+                <option value="" selected disabled>Select an Item</option>
+                <option value="Lg. Handtossed">14" HTT</option>
+                <option value="Bacon">Bacon</option>
+                <option value="Beef">Beef</option>
+                <option value="Cheese">Cheese</option>
+                <option value="Chicken">Chicken</option>
+                <option value="It. Sausage">It. Sausage</option>
+                <option value="Pepperoni">Pepperoni</option>
+                <option value="Pork">Pork</option>
+                <option value="Wings Boneless">Wings (Boneless)</option>
+                <option value="Wings Traditional">Wings (Traditional)</option>
+            </select>
+<!-- Locations -->
             <select id="location" onchange="toggleInputs()">
+                <option value="" selected disabled>Select a Location</option>
                 <option value="Freezer">Freezer</option>
                 <option value="Walk-in">Walk-in</option>
                 <option value="Wing">Wing</option>
             </select>
+<!-- Input Fields -->
             <div id="inputGroup">
                 <input type="number" id="bins" placeholder="Bins" class="walk-in-only">
                 <input type="number" id="cases" placeholder="Cases">
@@ -29,5 +45,8 @@
             </div>
     </div>
     <script src="inventory.js"></script>
+
+
+    
 </body>
 </html>
