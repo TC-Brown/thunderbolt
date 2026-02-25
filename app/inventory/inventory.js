@@ -58,11 +58,55 @@ function renderTables() {
                 <tbody> <!-- Render tables -->
                     ${items.map(i => {
             let totalStr = '';
-            if (i.name === 'Chicken') {
+            if (i.name === 'Bacon') {
+                const bacBg = i.bags * 5;
+                const bacCs = i.cases * 20;
+                const bacTotal = bacBg + bacCs;
+                totalStr = `${bacTotal}`;
+            }
+            else if (i.name === 'Beef') {
+                const beefBg = i.bags * 5;
+                const beefCs = i.cases * 40;
+                const beefTotal = beefBg + beefCs;
+                totalStr = `${beefTotal}`;
+            }
+            else if (i.name === 'Cheese') {
+                const cheeseBg = i.bags * 20;
+                const cheeseCs = i.cases * 20;
+                const cheeseTotal = cheeseBg + cheeseCs;
+                totalStr = `${cheeseTotal}`;
+            }
+            else if (i.name === 'Chicken') {
                 const chixBg = i.bags * 2.5;  // Find logic to calculate bags @ 2.5 lbs each and display the correct number when bags are added.
                 const chixCs = (i.cases * 10) + chixBg;
                 totalStr = `${i.cases} cs, ${i.bags} bags (Total: ${chixCs} lbs)`;
-            } else {
+            }
+            else if (i.name === 'It. Sausage') {
+                const itSgBg = i.bags * 5;
+                const itSgCs = i.cases * 40;
+                const itSgTotal = itSgBg + itSgCs;
+                totalStr = `${itSgTotal}`;
+            }
+            else if (i.name === 'Pepperoni') {
+                const pepBg = i.bags * 12.5;
+                const pepCs = i.cases * 25;
+                const pepTotal = pepBg + pepCs;
+                totalStr = `${pepTotal}`;
+            }
+            else if (i.name === 'Pork') {
+                const porkBg = i.bags * 5;
+                const porkCs = i.cases * 40;
+                const porkTotal = porkBg + porkCs;
+                totalStr = `${porkTotal}`;
+            }
+            else if (i.name === 'Lg. Handtossed') {
+                const lgHtBg = i.bags * 1;
+                const lgHtCs = i.cases * 32;
+                const lgHtBin = i.bins * 6;
+                const lgHtTotal = lgHtBg + lgHtCs + lgHtBin;
+                totalStr = `${lgHtTotal}`;
+            }
+            else {
                 totalStr = `${loc !== 'Wing' ? `${i.cases} cs, ` : ''}${loc === 'Walk-in' ? `${i.bins} bins, ` : ''}${loc === 'Wing' ? `${i.bags} ind./ bags` : `${i.bags} bags`}`;
             }
 
