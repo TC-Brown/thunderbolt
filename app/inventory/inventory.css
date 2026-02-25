@@ -50,7 +50,6 @@ table {
     background: white; 
     margin-bottom: 20px; 
     border-collapse: collapse;
-    border: 5px solid red;
     width: 100%;
 }
 
@@ -69,5 +68,5 @@ th {
 }
 
 .walk-in-only { 
-    display: none; 
+    display: none;
 }
