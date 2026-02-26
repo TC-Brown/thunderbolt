@@ -7,52 +7,43 @@ body {
     font-family: sans-serif; 
     text-align: center;
     overflow-x: hidden;
-    margin: 1px auto;
-    padding: 1px;
 }
 
 .container {
     background: linear-gradient(45deg, #217336, #217599);
-    width: 450px;
-    height: 850px;
-
+    width: 100vw;
+    height: 100vh;
 }
 
 .form-card { 
-    background: #f4f7f6; 
-    padding: 1px; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-    margin: 5px auto; 
-    display: flex; 
-    gap: 5px;
-    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     width: 90%;
-    contain: content;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
-select { 
-    padding: 8px; 
-    border: 1px solid #ddd; 
+.form-card select, 
+.form-card input[type="text"] { 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    width: 48%;
-
-}
-input {
-    padding: 8px; 
-    border: 1px solid #ddd; 
-    border-radius: 4px;
-    width: 49%;
-  
+    box-sizing: border-box;
 }
 button { 
-    background: #22a257; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
+    background: #28a745;
+    color: white;
+    padding: 12px 20p;
+    border: none;
     border-radius: 4px;
-    width: 39%;
-    cursor: pointer;
+    height: 40px;
+    width: 50%;
+    font-size: 16px;
+    transform: translateY(-40px) translateX(90px);
 }
 
 table { 
@@ -86,7 +77,7 @@ th {
     display: flex; 
     gap: 5px;
     flex-wrap: wrap;
-    width: 90%;
+    width: 99%;
 }
 .walk-in-only { 
     display: none;
