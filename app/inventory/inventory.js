@@ -21,7 +21,7 @@ function addItem() {
         location: document.getElementById('location').value,
         bins: (parseInt(document.getElementById('bins').value) || 0) * 6,
         cases: parseInt(document.getElementById('cases').value) || 0,
-        bags: itemName === 'Chicken' ? (praseInt(document.getElementById('bags').value) || 0) * 2.5 : bagValue,
+        bags: parseInt(document.getElementById('bags').value) || 0,
     };
 
     if (!item.name) return alert("Enter an item name!");
