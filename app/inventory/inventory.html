@@ -8,10 +8,11 @@
 </head>
 <body>
     <div class="container">
+
         <h1>Inventory Tracker</h1>
-        
+
         <div class="form-card">
-<!-- Inventory Items -->
+
             <select name="itemName" id="itemName" class="itemName">
                 <option value="" selected disabled>Select an Item</option>
                 <option value="Lg. Handtossed">14" HTT</option>
@@ -25,28 +26,33 @@
                 <option value="Wings Boneless">Wings (Boneless)</option>
                 <option value="Wings Traditional">Wings (Traditional)</option>
             </select>
-<!-- Locations -->
+
             <select id="location" onchange="toggleInputs()">
                 <option value="" selected disabled>Select a Location</option>
                 <option value="Freezer">Freezer</option>
                 <option value="Walk-in">Walk-in</option>
                 <option value="Wing">Wing</option>
             </select>
-<!-- Input Fields -->
+
             <div id="inputGroup">
                 <input type="number" id="bins" placeholder="Bins" class="walk-in-only">
                 <input type="number" id="cases" placeholder="Cases">
                 <input type="number" id="bags" placeholder="Bags">
             </div>
+
             <button onclick="addItem()">Add to Inventory</button>
+
         </div>
 
         <div id="inventoryDisplay">
-            </div>
+            <!-- Content is displayed dynamically through JavaScript from localStorage -->
+        </div>
     </div>
     <script src="inventory.js"></script>
-
-
-    
+   
 </body>
+
+<footer>
+    <p>Version | 1.0.0.alpha | &copy; T.C. Brown 2026</p> 
+</footer>
 </html>

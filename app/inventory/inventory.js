@@ -19,7 +19,7 @@ function addItem() {
         id: Date.now(),
         name: document.getElementById('itemName').value,
         location: document.getElementById('location').value,
-        bins: (parseInt(document.getElementById('bins').value) || 0) * 6,
+        bins: (parseInt(document.getElementById('bins').value) || 0) * 1,
         cases: parseInt(document.getElementById('cases').value) || 0,
         bags: parseInt(document.getElementById('bags').value) || 0,
     };
@@ -107,13 +107,13 @@ function renderTables() {
             }
             else if (i.name === 'Wings Boneless') {
                 const wbBg = i.bags * 1;
-                const wbCs = i.cases * 20;
+                const wbCs = i.cases * 10;
                 const wbTotal = wbBg + wbCs;
                 totalStr = `${wbTotal}`;
             }
             else if (i.name === 'Wings Traditional') {
-                const wtBg = i.bags * 5;
-                const wtCs = i.cases * 20;
+                const wtBg = i.bags * 1;
+                const wtCs = i.cases * 10;
                 const wtTotal = wtBg + wtCs;
                 totalStr = `${wtTotal}`;
             }

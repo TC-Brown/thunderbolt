@@ -7,6 +7,7 @@ body {
     font-family: sans-serif; 
     text-align: center;
     overflow-x: hidden;
+    user-select: none;
 }
 
 .container {
@@ -50,7 +51,6 @@ table {
     background: #f4f7f6; 
     margin: 20px auto; 
     border-collapse: collapse;
-    user-select: none;
     table-layout: fixed;
     width: 100%;
 }
@@ -81,4 +81,15 @@ th {
 }
 .walk-in-only { 
     display: none;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    background-color: #34495e;
+    border-top: 1px solid goldenrod;
+    font-size: 12px;
+    color: goldenrod;
 }
