@@ -1,11 +1,4 @@
-/* 
-    Color Palette: 
-    #899499 - Classic Dark
-    #217599 - BNB
-    #217336 - TCB
-    #91A092 - Pewter Green/Gray
-*/
-/* Note: Get links for buttons and beggin working on framework */
+
 /* Reset */
 * {
     margin: 0;
@@ -16,21 +9,25 @@
 /* Main Content Styles */
 header {
     text-align: center;
-    background: linear-gradient(45deg, #217336, #217599);
     padding: 10px;
     border-bottom: 2px solid gold;
-    color: black;
-    text-shadow: #91A092 2px 2px 2px;
+    background: linear-gradient(to bottom, #217336, #217599);
+    color: gold;
+    text-shadow: 0px 3px 3px black;
 }
-body { 
-    background-color: #899499;
+body {
+  margin: 0;
+  height: 100vh;
+  /* A 45-degree tilt for a dynamic feel */
+  background: linear-gradient(#217599 0%, #217336 100%);
+  background-attachment: fixed;
 }
 .app-tile { 
     height: 100px;
     width: 300px;
-    background: linear-gradient(45deg, #217336, #217599);
+    border: .5px solid black;
+    background: rgba(255, 217, 0, 0.75);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 25px auto;
     display: flex;
     flex-direction: column;
@@ -39,31 +36,33 @@ body {
 }
 .app-tile:hover { 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid gold;
-    color: whitesmoke;
+    background: linear-gradient(45deg, gold, #217336);
+    border: 2px solid black;
+    color: black;
 }
 .app-tile:active { 
     transform: scale(1.1);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(45deg, #217336, #91A092);
-    color: whitesmoke;
+    background: linear-gradient(45deg, #217336, #217599);
+    color: black;
 }
 /* Flag for sections of hub that are under construction */
 .flag { 
-    background: linear-gradient(45deg, gold, black, gold, black);
-    color: rgb(255, 255, 255);
+    background: black;
+    color: gold;
     padding: 5px;
     width: 100%;
     text-align: center;
     font-weight: bold;
-    text-shadow: 0px 3px 3px black;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    text-shadow: 0px 3px 3px brown;
+    border-top: 2px solid rgba(255, 215, 0, 0.75);
+    border-bottom: 2px solid rgba(255, 215,0, 0.75);
 }
 /* Footer Styles */
 footer { 
     text-align: center;
-    background: linear-gradient(45deg, #217336, #217599);
+    background: linear-gradient(to top, #217599, #217336);
+    color: gold;
     padding: 10px;
     border-top: 2px solid gold;
     position: fixed;
