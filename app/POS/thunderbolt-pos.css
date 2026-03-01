@@ -7,13 +7,19 @@
 html,
 body {
     height: 100%;
+    background-color: #121212; 
 }
 main {
     height: 92%;
 }
+header { 
+    background-color: #121212;
+    font-size: smaller;
+    color: #a7e1ee;
+}
 header h1 { 
     font-family: cursive;
-    width: 100%;
+    margin-left: 15px;
 }
 .grid { 
     display: grid;
@@ -136,11 +142,41 @@ tbody.summary-table td:nth-child(3){
     background-color: red;
     color: white;
 }
-img { 
-    width: 150px;
-    
-}
 /*----------Menu Payment ----------*/
 
+.menu-payment {
+   background: white;
+   flex-grow: 1;
+   z-index: 0;
+}
+.menu { 
+    flex-flow: row wrap;
+    grid-column: 1;
+    grid-row: 1;
+    align-content: flex-start;
+    z-index: 0;
+    height: 100%;
+    overflow: auto;
+}
 
-/* Stop: 58:09:00 - Create POS Web-app */  
+.menu-item { 
+    flex-flow: column nowrap;
+    flex-basis: auto;
+    flex-shrink: 0;
+    margin: 5px;
+    background: gray;
+    width: 150px;
+}
+
+.menu-img { 
+    border-radius: 50%;
+    
+}
+
+figcaption {
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+/* Stop: 1:05:40 - Create POS Web-app */  
+/* ---------- added fo display purposes only ----------*/

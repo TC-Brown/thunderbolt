@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen Inventory Pro</title>
+    <title>Thunderbolt Inventory | Kitchen Inventory Pro</title>
     <link rel="stylesheet" href="inventory.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <h1>Inventory Tracker</h1>
 
         <div class="form-card">
-
+            <!-- The first input is a dropdown menu of all the items in the inventory. -->
             <select name="itemName" id="itemName" class="itemName">
                 <option value="" selected disabled>Select an Item</option>
                 <option value="Lg. Handtossed">14" HTT</option>
@@ -26,16 +26,16 @@
                 <option value="Wings Boneless">Wings (Boneless)</option>
                 <option value="Wings Traditional">Wings (Traditional)</option>
             </select>
-
+            <!-- The next input is a dropdown menu of the locations where the item can be stored. -->
             <select id="location" onchange="toggleInputs()">
                 <option value="" selected disabled>Select a Location</option>
                 <option value="Freezer">Freezer</option>
                 <option value="Walk-in">Walk-in</option>
                 <option value="Wing">Wing</option>
             </select>
-
+            <!-- The next inputs are for the quantity of the item in the selected location. -->
             <div id="inputGroup">
-                <input type="number" id="bins" placeholder="Bins" class="walk-in-only">
+                <input type="number" id="bins" placeholder="Bins" class="walk-in-only"> <!-- try to get the inputs to take up and even amount of space with the inventory button also add margin to the input fields -->
                 <input type="number" id="cases" placeholder="Cases">
                 <input type="number" id="bags" placeholder="Bags">
             </div>
