@@ -16,7 +16,7 @@ posBtn.addEventListener('click', () => {
 const inventoryBtn = document.getElementById('app-tile-4');
 
 inventoryBtn.addEventListener('click', () => {
-    window.location.href = "app/inventory/inventory.html";
+    window.location.href = "app/inventory/index.html";
 });
 /*-- Project ID: 0005 --*/
 /*-- Project ID: 0006 --*/
