@@ -1,5 +1,8 @@
 * {
     user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Trebuchet MS', Arial, sans-serif;
@@ -7,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #163f6e 0%, #000 100%);
-    color: #fff;
+    color: #ebf1f8fb;
     text-align: center;
 }
 header {
@@ -105,11 +108,12 @@ footer {
     border-top: 2px solid #FFD700;
     font-size: 1em;
     margin-top: 2em;
+    box-sizing: border-box;
 }
 .introduction, .skills, .certifications {
     margin: 20px 0;
     padding: 12px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(22, 63, 110, 0.5);
     border-left: 4px solid #FFD700;
     border-radius: 8px;
     text-align: left;
@@ -137,7 +141,5 @@ p {
     box-shadow: #ffff 0 0 8px, #163f6e 0 0 12px;
 }
 /* Animation Elements */
-.skills, .certifications { 
-    background-color: #163f6e;
-}
+
 /* Keyframes */
