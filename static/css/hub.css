@@ -18,8 +18,7 @@ header {
 body {
   margin: 0;
   height: 100vh;
-  /* A 45-degree tilt for a dynamic feel */
-  background: linear-gradient(#217599 0%, #217336 100%);
+  background: linear-gradient(#217599, #217336);
   background-attachment: fixed;
 }
 .app-tile { 
@@ -58,7 +57,7 @@ body {
     border-top: 2px solid rgba(255, 215, 0, 0.75);
     border-bottom: 2px solid rgba(255, 215,0, 0.75);
 }
-/* Footer Styles */
+
 footer { 
     text-align: center;
     background: linear-gradient(to top, #217599, #217336);
