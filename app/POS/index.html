@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../static/img/favicon.jpg">
     <title>T.C. Brown | POS System</title>
-    <link rel="stylesheet" href="../../static/css/hub.css">
     <link rel="stylesheet" href="thunderbolt-pos.css">
     <meta name="author" content="T.C. Brown">
     <meta name="description" content="">
@@ -168,6 +167,30 @@
                     <figcaption>$1.99</figcaption>
                 </figure>
             </div>
+            <div class="payment grid" id="payment-overlay">
+                <div class="paypad grid" id="paypad">
+                    <button class="paypad-btn number" data-id="7">7</button>
+                    <button class="paypad-btn number" data-id="8">8</button>
+                    <button class="paypad-btn number" data-id="9">9</button>
+                    <button class="paypad-btn number" data-id="4">4</button>
+                    <button class="paypad-btn number" data-id="5">5</button>
+                    <button class="paypad-btn number" data-id="6">6</button>
+                    <button class="paypad-btn number" data-id="1">1</button>
+                    <button class="paypad-btn number" data-id="2">2</button>
+                    <button class="paypad-btn number" data-id="3">3</button>
+                    <button class="paypad-btn number" data-id="0">0</button>
+                    <button class="paypad-btn" data-id="back">back</button>
+                    <button class="paypad-btn" data-id="clear">clear</button>
+                    <button class="paypad-btn span3-col" id="close-sale" data-id="close-sale">close sale</button>
+                </div>
+                <div class="close-paypad flex">
+                    <svg id="paypad-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg> 
+                </div>
+            </div>
         </section>
 
     </main>
@@ -175,3 +198,6 @@
     <script src="pos.js"></script>
 
 </body>
+<footer>
+    <p style="background-color: black; color: gray; font-size: 12px; margin: 2px; padding: 2px;">Version 1.0.0.dev | &copy; T. C. Brown</p>
+</footer>

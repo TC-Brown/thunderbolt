@@ -168,9 +168,12 @@ tbody.summary-table td:nth-child(3){
     width: 150px;
 }
 
-.menu-img { 
+img { 
     border-radius: 50%;
-    
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 figcaption {
@@ -178,5 +181,40 @@ figcaption {
     text-align: center;
     user-select: none;
 }
-/* Stop: 1:05:40 - Create POS Web-app */  
+
+#payment-overlay {
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-columns: 330px auto;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.paypad {
+    margin: 10px 0 0 10px;
+    align-content: center;
+    grid-column: 1;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.span3-col {
+    grid-column: span 3;
+}
+
+#close-sale {
+    display: none;
+}
+.paypad-btn.number {
+    font-size: 2rem;
+}
+.close-icon { 
+    color: white;
+    font-size: 3rem;
+    margin: 150px 0 0 15px;
+    
+}
+/* Stop: 0:00:00 - Create POS Web-app */  
 /* ---------- added fo display purposes only ----------*/
