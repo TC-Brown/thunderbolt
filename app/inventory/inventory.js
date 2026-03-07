@@ -8,7 +8,7 @@ function toggleInputs() {
     const bagsInput = document.getElementById('bags');
 
     binInput.style.display = (loc === 'Walk-in') ? 'block' : 'none';
-    casesInput.style.display = (loc === 'Wing') ? 'none' : 'block';
+    casesInput.style.display = (loc === 'Wing Street') ? 'none' : 'block';
     bagsInput.style.display = 'block';
 }
 function addItem() {
@@ -36,7 +36,7 @@ function saveAndRender() {
 }
 function renderTables() {
     const container = document.getElementById('inventoryDisplay');
-    const locations = ['Freezer', 'Walk-in', 'Wing'];
+    const locations = ['Freezer', 'Walk-in', 'Wing Street'];
 
     container.innerHTML = locations.map(loc => {
         const items = inventory.filter(i => i.location === loc);
@@ -47,7 +47,7 @@ function renderTables() {
                         <tr>
                             <th>Item</th>
                             ${loc === 'Walk-in' ? '<th>Bins</th>' : ''}
-                            ${loc !== 'Wing' ? '<th>Cases</th>' : ''}
+                            ${loc !== 'Wing Street' ? '<th>Cases</th>' : ''}
                             <th>Bags</th>
                             <th>Action</th>
                             <th>Total</th>
@@ -125,7 +125,7 @@ function renderTables() {
                         <tr>
                             <td>${i.name}</td>
                             ${loc === 'Walk-in' ? `<td>${i.bins}</td>` : ''}
-                            ${loc !== 'Wing' ? `<td>${i.cases}</td>` : ''}
+                            ${loc !== 'Wing Street' ? `<td>${i.cases}</td>` : '' ? `<td>${i.bags}</td>` : ''}
                             <td>${i.bags}</td>
                             <td>
                                 <div class="delete-btn" onclick="deleteItem(${i.id})" style="background: rgb(35, 7, 91); display: flex; justify-content: center; align-items: center;">
